@@ -22,6 +22,53 @@
   clear: both;
 }
 
-/* Posititoning Classes */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.col-1 {
+  display: inline-block;
+  float: left;
+  width: 32%;
+  column-fill: balance;
+  overflow: auto;
+  column-gap: 1em;
+}
+
+.col-2 {
+  display: inline-block;
+  float: left;
+  width: 66%;
+  column-fill: balance;
+  overflow: auto;
+  height: auto;
+}
+
+.col-3 {
+  width: 100%;
+  column-fill: balance;
+}
 
 
+.first {
+  margin-left: 0%;
+  clear: both;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
